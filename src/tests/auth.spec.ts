@@ -24,9 +24,9 @@ test.fail('Login', async ({page}) => {
 // });
 
 //Annotation
-test.use({headless: true})
+
 test.describe('Dummy group',() => {
-  test.only('Login',{annotation: {
+  test('Login',{annotation: {
     type: "issue",
     description: "There is some issue",
   }
